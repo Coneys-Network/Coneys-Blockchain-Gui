@@ -5,13 +5,13 @@ import {
   Amount,
   Fee,
   Form,
-  TextField as ChiaTextField,
+  TextField as ConeysTextField,
   AlertDialog,
   CopyToClipboard,
   Flex,
   Card,
   ConfirmDialog,
-} from '@chia/core';
+} from '@coneys/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { useDispatch, useSelector } from 'react-redux';
 import isNumeric from 'validator/es/lib/isNumeric';
@@ -42,7 +42,7 @@ import {
   send_transaction,
   farm_block,
 } from '../../../modules/message';
-import { /* mojo_to_chia_string, */ chia_to_mojo } from '../../../util/chia';
+import { /* mojo_to_coneys_string, */ coneys_to_mojo } from '../../../util/coneys';
 import { openDialog } from '../../../modules/dialog';
 import { get_transaction_result } from '../../../util/transaction_result';
 import config from '../../../config/config';
@@ -238,7 +238,7 @@ function BalanceCardSubSection(props: BalanceCardSubSectionProps) {
         </Box>
         <Box>
           <Typography variant="subtitle1">
-            {mojo_to_chia_string(props.balance)} {currencyCode}
+            {mojo_to_coneys_string(props.balance)} {currencyCode}
           </Typography>
         </Box>
       </Box>
@@ -273,7 +273,7 @@ function BalanceCard(props: BalanceCardProps) {
         balance={balance}
         tooltip={
           <Trans>
-            This is the total amount of chia in the blockchain at the current
+            This is the total amount of coneys in the blockchain at the current
             peak sub block that is controlled by your private keys. It includes
             frozen farming rewards, but not pending incoming and outgoing
             transactions.
@@ -285,9 +285,9 @@ function BalanceCard(props: BalanceCardProps) {
         balance={balance_spendable}
         tooltip={
           <Trans>
-            This is the amount of Chia that you can currently use to make
+            This is the amount of Coneys that you can currently use to make
             transactions. It does not include pending farming rewards, pending
-            incoming transactions, and Chia that you have just spent but is not
+            incoming transactions, and Coneys that you have just spent but is not
             yet in the blockchain.
           </Trans>
         }
@@ -454,7 +454,7 @@ function SendCard(props: SendCardProps) {
         openDialog(
           <AlertDialog>
             <Trans>
-              Error: Cannot send chia to coloured address. Please enter a chia
+              Error: Cannot send coneys to coloured address. Please enter a coneys
               address.
             </Trans>
           </AlertDialog>,
@@ -463,15 +463,15 @@ function SendCard(props: SendCardProps) {
       return;
     }
 
-    if (address.slice(0, 12) === 'chia_addr://') {
+    if (address.slice(0, 12) === 'coneys_addr://') {
       address = address.slice(12);
     }
     if (address.startsWith('0x') || address.startsWith('0X')) {
       address = address.slice(2);
     }
 
-    const amountValue = Number.parseFloat(chia_to_mojo(amount));
-    const feeValue = Number.parseFloat(chia_to_mojo(fee));
+    const amountValue = Number.parseFloat(coneys_to_mojo(amount));
+    const feeValue = Number.parseFloat(coneys_to_mojo(fee));
 
     dispatch(send_transaction(wallet_id, amountValue, feeValue, address));
 
@@ -494,7 +494,7 @@ function SendCard(props: SendCardProps) {
       <Form methods={methods} onSubmit={handleSubmit}>
         <Grid spacing={2} container>
           <Grid xs={12} item>
-            <ChiaTextField
+            <ConeysTextField
               name="address"
               variant="filled"
               color="secondary"
@@ -615,11 +615,10 @@ function AddressCard(props: AddressCardProps) {
 
 type StandardWalletProps = {
   wallet_id: number;
-  showTitle?: boolean;
 };
 
 export default function StandardWallet(props: StandardWalletProps) {
-  const { wallet_id, showTitle } = props;
+  const { wallet_id } = props;
   const dispatch = useDispatch();
   const openDialog = useOpenDialog();
 
@@ -644,47 +643,44 @@ export default function StandardWallet(props: StandardWalletProps) {
     <Flex flexDirection="column" gap={1}>
       <Flex gap={1} alignItems="center">
         <Flex flexGrow={1}>
-          {showTitle && (
-            <Typography variant="h5" gutterBottom>
-              <Trans>Chia Wallet</Trans>
-            </Typography>
+          <Typography variant="h5" gutterBottom>
+            <Trans>Coneys Wallet</Trans>
+          </Typography>
+        </Flex>
+        <More>
+          {({ onClose }) => (
+            <Box>
+              <MenuItem
+                onClick={() => {
+                  onClose();
+                  handleDeleteUnconfirmedTransactions();
+                }}
+              >
+                <ListItemIcon>
+                  <DeleteIcon />
+                </ListItemIcon>
+                <Typography variant="inherit" noWrap>
+                  <Trans>Delete Unconfirmed Transactions</Trans>
+                </Typography>
+              </MenuItem>
+            </Box>
           )}
-        </Flex>
-        <Flex gap={1} alignItems="center">
-          <Flex alignItems="center">
-            <Typography variant="body1" color="textSecondary">
-              <Trans>Wallet Status:</Trans>
-            </Typography>
-            &nbsp;
-            <WalletStatus height />
-          </Flex>
-          <More>
-            {({ onClose }) => (
-              <Box>
-                <MenuItem
-                  onClick={() => {
-                    onClose();
-                    handleDeleteUnconfirmedTransactions();
-                  }}
-                >
-                  <ListItemIcon>
-                    <DeleteIcon />
-                  </ListItemIcon>
-                  <Typography variant="inherit" noWrap>
-                    <Trans>Delete Unconfirmed Transactions</Trans>
-                  </Typography>
-                </MenuItem>
-              </Box>
-            )}
-          </More>
-        </Flex>
+        </More>
       </Flex>
 
-      <Flex flexDirection="column" gap={3}>
-        <WalletCards wallet_id={wallet_id} />
-        <SendCard wallet_id={wallet_id} />
-        <AddressCard wallet_id={wallet_id} />
-        <WalletHistory walletId={wallet_id} />
+      <Flex flexDirection="column" gap={2}>
+        <Flex gap={1} justifyContent="flex-end">
+          <Typography variant="body1" color="textSecondary">
+            <Trans>Wallet Status:</Trans>
+          </Typography>
+          <WalletStatus height />
+        </Flex>
+        <Flex flexDirection="column" gap={3}>
+          <WalletCards wallet_id={wallet_id} />
+          <SendCard wallet_id={wallet_id} />
+          <AddressCard wallet_id={wallet_id} />
+          <WalletHistory walletId={wallet_id} />
+        </Flex>
       </Flex>
     </Flex>
   );

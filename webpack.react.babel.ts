@@ -72,8 +72,8 @@ export default {
       'node_modules',
     ],
     alias: {
-      "@chia/core": `${__dirname}/src/components/core`,
-      "@chia/icons": `${__dirname}/src/components/icons`,
+      "@coneys/core": `${__dirname}/src/components/core`,
+      "@coneys/icons": `${__dirname}/src/components/icons`,
       crypto: 'crypto-browserify',
       stream: 'stream-browserify',
     },
@@ -148,15 +148,12 @@ export default {
       use: ['style-loader', 'css-loader'],
     }, {
       test: /\.(woff|woff2?|ttf|eot)$/,
-      type: 'asset',
-      parser: {
-        dataUrlCondition: {
-          maxSize: 10000,
+      use: [{
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
         },
-      },
-      generator: {
-        filename: '[name]-[contenthash:8][ext]',
-      },
+      }],
     }, {
       test: /\.svg$/,
       use: ['@svgr/webpack', 'url-loader'],

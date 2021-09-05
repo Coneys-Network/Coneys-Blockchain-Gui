@@ -9,7 +9,7 @@ import {
   Flex,
   Checkbox,
   TooltipIcon,
-} from '@chia/core';
+} from '@coneys/core';
 import {
   Grid,
   FormControl,

@@ -2,8 +2,8 @@ const units = require('../../util/units');
 
 describe('units', () => {
   describe('#getUnit', () => {
-    it('gets unit of chia', () => {
-      const result = units.getUnit('chia');
+    it('gets unit of coneys', () => {
+      const result = units.getUnit('coneys');
 
       expect(result).toBe(1);
     });
@@ -18,11 +18,11 @@ describe('units', () => {
       expect(result).toBe(1e-9);
     });
     it('supports uppercase characters', () => {
-      const result = units.getUnit('CHIA');
+      const result = units.getUnit('FLAX');
 
       expect(result).toBe(1);
     });
-    it('gets unit of chia using alias', () => {
+    it('gets unit of coneys using alias', () => {
       const result = units.getUnit('ch');
 
       expect(result).toBe(1);
@@ -46,8 +46,8 @@ describe('units', () => {
     });
   });
   describe('#getDisplay', () => {
-    it('gets display of chia', () => {
-      const result = units.getDisplay('chia');
+    it('gets display of coneys', () => {
+      const result = units.getDisplay('coneys');
 
       expect(result).toEqual({
         format: '{amount} CH',
@@ -87,13 +87,13 @@ describe('units', () => {
       expect(result).toEqual(1);
     });
     it('modifies an existing unit', () => {
-      units.setUnit('chia', 9);
+      units.setUnit('coneys', 9);
 
-      const result = units.getUnit('chia');
+      const result = units.getUnit('coneys');
 
       expect(result).toEqual(9);
 
-      units.setUnit('chia', 1);
+      units.setUnit('coneys', 1);
     });
   });
   describe('#setDisplay', () => {
@@ -111,15 +111,15 @@ describe('units', () => {
       });
     });
     it('updates an existing display', () => {
-      units.setDisplay('chia', {
-        format: '{amount} TXCH',
+      units.setDisplay('coneys', {
+        format: '{amount} TCSR',
         fractionDigits: 0,
       });
 
-      const result = units.getDisplay('chia');
+      const result = units.getDisplay('coneys');
 
       expect(result).toEqual({
-        format: '{amount} TXCH',
+        format: '{amount} TCSR',
         fractionDigits: 0,
       });
     });

@@ -3,7 +3,7 @@ import { useHistory } from 'react-router';
 import { useDispatch } from 'react-redux';
 import { Trans } from '@lingui/macro';
 import { ChevronRight as ChevronRightIcon } from '@material-ui/icons';
-import { Flex } from '@chia/core';
+import { Flex } from '@coneys/core';
 import { createPlotNFT } from '../../modules/plotNFT';
 import PlotNFTState from '../../constants/PlotNFTState';
 import useUnconfirmedPlotNFTs from '../../hooks/useUnconfirmedPlotNFTs';
@@ -57,7 +57,7 @@ export default function PlotNFTAdd(props: Props) {
         title={<Trans>Want to Join a Pool? Create a Plot NFT</Trans>}
         description={
           <Trans>
-            Join a pool and get consistent XCH farming rewards. The average
+            Join a pool and get consistent CSR farming rewards. The average
             returns are the same, but it is much less volatile. Assign plots to
             a plot NFT. You can easily switch pools without having to re-plot.
           </Trans>

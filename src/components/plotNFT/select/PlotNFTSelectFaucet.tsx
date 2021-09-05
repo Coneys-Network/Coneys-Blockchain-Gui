@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Button, Flex, CardStep } from '@chia/core';
+import { Button, Flex, CardStep } from '@coneys/core';
 import { Box, Typography } from '@material-ui/core';
 import useCurrencyCode from '../../../hooks/useCurrencyCode';
 import useOpenExternal from '../../../hooks/useOpenExternal';
@@ -16,7 +16,7 @@ export default function PlotNFTSelectFaucet(props: Props) {
   const openExternal = useOpenExternal();
 
   function handleClick() {
-    openExternal('https://faucet.chia.net/');
+    openExternal('https://faucet.coneysnetwork.org/');
   }
 
   return (

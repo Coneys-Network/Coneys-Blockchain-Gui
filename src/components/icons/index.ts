@@ -1,4 +1,4 @@
-export { default as Chia } from './Chia';
+export { default as Coneys } from './Coneys';
 export { default as Farm } from './Farm';
 export { default as Home } from './Home';
 export { default as Keys } from './Keys';
