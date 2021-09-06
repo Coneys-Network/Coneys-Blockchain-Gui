@@ -6,16 +6,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: be_BY\n"
-"Project-Id-Version: chia-blockchain\n"
+"Project-Id-Version: coneys-blockchain\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2021-07-26 15:12\n"
+"PO-Revision-Date: 2021-07-17 00:01\n"
 "Last-Translator: \n"
 "Language-Team: Belarusian\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Crowdin-Project: chia-blockchain\n"
+"X-Crowdin-Project: coneys-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: be\n"
-"X-Crowdin-File: /[Chia-Network.chia-blockchain-gui] main/src/locales/en-US/messages.po\n"
+"X-Crowdin-File: /[Coneys-Network.coneys-blockchain-gui] main/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 118\n"
 
 #: src/components/plot/add/PlotAddNFT.tsx:62
@@ -23,15 +23,11 @@ msgid "(Optional)"
 msgstr ""
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
-msgid "*Want to explore Chia’s blocks further? Check out <0>Chia Explorer</0> built by an open source developer."
-msgstr "*Хочаце даведацца больш пра блокчэйн Chia? Паглядзіце <0>Chia Explorer</0>, створаны распрацоўшчыкам па прынцыпах адкрытага зыходнага кода."
+msgid "*Want to explore Coneys’s blocks further? Check out <0>Coneys Explorer</0> built by an open source developer."
+msgstr "*Хочаце даведацца больш пра блокчэйн Coneys? Паглядзіце <0>Coneys Explorer</0>, створаны распрацоўшчыкам па прынцыпах адкрытага зыходнага кода."
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
-msgstr ""
-
-#: src/components/wallet/Wallets.tsx:122
-msgid "+ Add Wallet"
 msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:94
@@ -48,8 +44,8 @@ msgstr "Камбайн — сэрвіс, які выконваецца на к�
 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
-msgid "About Chia Blockchain"
-msgstr "Аб праграме Chia Blockchain"
+msgid "About Coneys Blockchain"
+msgstr "Аб праграме Coneys Blockchain"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -148,7 +144,7 @@ msgid "Are you sure you want to delete the plot? The plot cannot be recovered."
 msgstr "Сапраўды выдаліць дзялянку? Пасля выдалення дзялянку будзе немагчыма аднавіць."
 
 #: src/components/plotNFT/PlotNFTCard.tsx:125
-#: src/components/wallet/standard/WalletStandard.tsx:633
+#: src/components/wallet/standard/WalletStandard.tsx:632
 msgid "Are you sure you want to delete unconfirmed transactions?"
 msgstr ""
 
@@ -220,8 +216,8 @@ msgid "Block VDF Iterations"
 msgstr "Ітэрацый VDF блока"
 
 #: src/components/block/Block.jsx:336
-msgid "Block at height {0} in the Chia blockchain"
-msgstr "Блок на вышыні {0} у блокчэйне Chia"
+msgid "Block at height {0} in the Coneys blockchain"
+msgstr "Блок на вышыні {0} у блокчэйне Coneys"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -310,20 +306,20 @@ msgid "Change Pool"
 msgstr ""
 
 #: src/electron/main.tsx:401
-msgid "Chat on KeyBase"
-msgstr "Чат у KeyBase"
+msgid "Chat on Discord"
+msgstr "Чат у Discord"
 
 #: src/electron/main.tsx:419
-msgid "Chia"
-msgstr "Chia"
+msgid "Coneys"
+msgstr "Coneys"
 
 #: src/electron/main.tsx:358
-msgid "Chia Blockchain Wiki"
-msgstr "Вікі блокчэйна Chia"
+msgid "Coneys Blockchain Wiki"
+msgstr "Вікі блокчэйна Coneys"
 
-#: src/components/wallet/standard/WalletStandard.tsx:649
-msgid "Chia Wallet"
-msgstr "Кашалёк Chia"
+#: src/components/wallet/standard/WalletStandard.tsx:647
+msgid "Coneys Wallet"
+msgstr "Кашалёк Coneys"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -387,7 +383,7 @@ msgid "Confirm Disconnect"
 msgstr "Пацвердзіць адлучэнне"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:121
-#: src/components/wallet/standard/WalletStandard.tsx:629
+#: src/components/wallet/standard/WalletStandard.tsx:628
 msgid "Confirmation"
 msgstr ""
 
@@ -600,7 +596,7 @@ msgstr "Затрымка"
 #: src/components/plotNFT/PlotNFTCard.tsx:122
 #: src/components/selectKey/SelectKey.tsx:67
 #: src/components/selectKey/SelectKey.tsx:109
-#: src/components/wallet/standard/WalletStandard.tsx:630
+#: src/components/wallet/standard/WalletStandard.tsx:629
 msgid "Delete"
 msgstr "Выдаліць"
 
@@ -610,7 +606,7 @@ msgid "Delete Plot"
 msgstr "Выдаліць дзялянку"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:315
-#: src/components/wallet/standard/WalletStandard.tsx:674
+#: src/components/wallet/standard/WalletStandard.tsx:663
 msgid "Delete Unconfirmed Transactions"
 msgstr ""
 
@@ -701,8 +697,8 @@ msgid "Edit Payout Instructions"
 msgstr ""
 
 #: src/components/wallet/WalletImport.tsx:147
-msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chia wallet."
-msgstr "Каб аднавіць свой кашалёк Chia, увядзіце раней захаваную вамі мнеманічную фразу з 24 слоў у правільным парадку."
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your Coneys Wallet."
+msgstr "Каб аднавіць свой кашалёк Coneys, увядзіце раней захаваную вамі мнеманічную фразу з 24 слоў у правільным парадку."
 
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
@@ -715,8 +711,8 @@ msgid "Error"
 msgstr "Памылка"
 
 #: src/components/wallet/standard/WalletStandard.tsx:456
-msgid "Error: Cannot send chia to coloured address. Please enter a chia address."
-msgstr "Памылка: немагчыма адправіць chia на адрас каляровай манеты. Укажыце адрас chia."
+msgid "Error: Cannot send coneys to coloured address. Please enter a coneys address."
+msgstr "Памылка: немагчыма адправіць coneys на адрас каляровай манеты. Укажыце адрас coneys."
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:20
 msgid "Estimated Network Space"
@@ -826,7 +822,7 @@ msgid "Fee"
 msgstr "Камісійныя"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
-#~ msgid "Fee (TXCH)"
+#~ msgid "Fee (TCSR)"
 #~ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
@@ -1030,15 +1026,15 @@ msgid "Join a Pool"
 msgstr ""
 
 #: src/components/plot/add/PlotAddNFT.tsx:44
-msgid "Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less volatile."
+msgid "Join a pool and get consistent CSR farming rewards. The average returns are the same, but it is much less volatile."
 msgstr ""
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:59
-msgid "Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
+msgid "Join a pool and get consistent CSR farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
 msgstr ""
 
 #: src/components/plot/add/PlotAddNFT.tsx:133
-msgid "Join a pool and get more consistent XCH farming rewards. Create a plot NFT and assign your new plots to a group."
+msgid "Join a pool and get more consistent CSR farming rewards. Create a plot NFT and assign your new plots to a group."
 msgstr ""
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:63
@@ -1088,7 +1084,7 @@ msgstr ""
 msgid "Loading Plot NFTs"
 msgstr ""
 
-#: src/components/wallet/Wallets.tsx:111
+#: src/components/wallet/Wallets.tsx:172
 msgid "Loading list of wallets"
 msgstr ""
 
@@ -1273,7 +1269,7 @@ msgid "Not found Plots"
 msgstr "Дзялянак не знойдзена"
 
 #: src/components/farm/FarmManageFarmingRewards.tsx:184
-msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25XCH reward for pooling plots."
+msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25CSR reward for pooling plots."
 msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:118
@@ -1495,8 +1491,8 @@ msgid "Plots Passed Filter"
 msgstr "Дзялянкі, якія прайшлі фільтр"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
-msgid "Plots are allocated space on your hard drive used to farm and earn Chia. <0>Learn more</0>"
-msgstr "Дзялянкі — гэта вылучаная прастора на вашым жорсткім дыску, якая выкарыстоўваецца для фермерства і прыносіць даход у Chia. <0>Даведацца больш</0>"
+msgid "Plots are allocated space on your hard drive used to farm and earn Coneys. <0>Learn more</0>"
+msgstr "Дзялянкі — гэта вылучаная прастора на вашым жорсткім дыску, якая выкарыстоўваецца для фермерства і прыносіць даход у Coneys. <0>Даведацца больш</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
@@ -1844,7 +1840,7 @@ msgid "Self Pooling"
 msgstr ""
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:105
-msgid "Self pool. When you win a block you will earn XCH rewards."
+msgid "Self pool. When you win a block you will earn CSR rewards."
 msgstr ""
 
 #: src/components/trading/CreateOffer.jsx:164
@@ -1897,7 +1893,7 @@ msgid "Skips adding a final directory to harvester for farming"
 msgstr "Прапускае дадаванне канцавога каталога ў камбайн для фермерства"
 
 #: src/components/pool/PoolHero.tsx:26
-msgid "Smooth out your XCH farming rewards by joining a pool."
+msgid "Smooth out your CSR farming rewards by joining a pool."
 msgstr ""
 
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:60
@@ -1933,8 +1929,8 @@ msgstr "Працягласць інтэрвалу расходаў (колька
 
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:401
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
-msgid "Spending Limit (chia per interval): {0}"
-msgstr "Ліміт расходаў (манет chia на інтэрвал): {0}"
+msgid "Spending Limit (coneys per interval): {0}"
+msgstr "Ліміт расходаў (манет coneys на інтэрвал): {0}"
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"
@@ -1949,7 +1945,7 @@ msgstr "Стан"
 #: src/components/trading/TradingOverview.jsx:128
 #: src/components/wallet/WalletHistory.tsx:55
 #: src/components/wallet/WalletStatusCard.tsx:22
-#: src/components/wallet/Wallets.tsx:52
+#: src/components/wallet/Wallets.tsx:118
 msgid "Status"
 msgstr "Стан"
 
@@ -1982,8 +1978,8 @@ msgstr "Стан:"
 #~ msgstr "Sub Block Height"
 
 #: src/components/block/Block.jsx:338
-#~ msgid "Sub Block at height {0} in the Chia blockchain"
-#~ msgstr "Sub Block at height {0} in the Chia blockchain"
+#~ msgid "Sub Block at height {0} in the Coneys blockchain"
+#~ msgstr "Sub Block at height {0} in the Coneys blockchain"
 
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:347
 msgid "Submit"
@@ -2010,23 +2006,23 @@ msgstr "Ідзе сінхранізацыя <0/>/<1/>"
 #~ msgstr "Syncing {progress}/{tip}"
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:15
-#~ msgid "TXCH Block Rewards"
+#~ msgid "TCSR Block Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardCoinbaseRewards.tsx:12
-#~ msgid "TXCH Farming Rewards"
+#~ msgid "TCSR Farming Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardFeesReward.tsx:12
-#~ msgid "TXCH Fees Collected"
+#~ msgid "TCSR Fees Collected"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardUserFees.tsx:12
-#~ msgid "TXCH User Fees"
-#~ msgstr "TXCH User Fees"
+#~ msgid "TCSR User Fees"
+#~ msgstr "TCSR User Fees"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:15
-#~ msgid "TXCH User Transaction Fees"
+#~ msgid "TCSR User Transaction Fees"
 #~ msgstr ""
 
 #: src/components/pool/PoolInfo.tsx:37
@@ -2103,7 +2099,7 @@ msgid "The total transactions fees in this block. Rewarded to the farmer."
 msgstr "Агульныя камісійныя за трансакцыі ў гэтым блоку. Узнагарода фермеру."
 
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:102
-msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCH address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
+msgid "These are the instructions for how the farmer wants to get paid. By default this will be an CSR address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
 msgstr ""
 
 #: src/components/plot/PlotsFailed.tsx:40
@@ -2126,8 +2122,8 @@ msgid "This feature is available only from the GUI."
 msgstr "Гэтая функцыя даступная толькі праз графічны інтэрфейс."
 
 #: src/components/wallet/card/WalletCardSpendableBalance.tsx:26
-msgid "This is the amount of Chia that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Chia that you have just spent but is not yet in the blockchain."
-msgstr "Сума манет Chia, якія вы зараз можаце выкарыстаць для выканання трансакцый. Не ўключае ў сябе чаканыя ўзнагароды за фермерства, чаканыя ўваходныя трансакцыі, а таксама вашы расходы, даныя пра якія яшчэ не былі занесены ў блокчэйн."
+msgid "This is the amount of Coneys that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Coneys that you have just spent but is not yet in the blockchain."
+msgstr "Сума манет Coneys, якія вы зараз можаце выкарыстаць для выканання трансакцый. Не ўключае ў сябе чаканыя ўзнагароды за фермерства, чаканыя ўваходныя трансакцыі, а таксама вашы расходы, даныя пра якія яшчэ не былі занесены ў блокчэйн."
 
 #: src/components/wallet/card/WalletCardPendingChange.tsx:26
 msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -2146,8 +2142,8 @@ msgid "This is the time the block was created by the farmer, which is before it 
 msgstr "Момант часу, калі блок быў створаны фермерам, г.зн. да таго, як ён быў завершаны праз пацвярджэнне часам (proof of time)."
 
 #: src/components/wallet/card/WalletCardTotalBalance.tsx:34
-msgid "This is the total amount of chia in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "Агульная сума манет Chia у блокчэйне ў бягучым крайнім падблоку, падкантрольным вашаму закрытаму ключу. Уключае ў сябе замарожаныя ўзнагароды за фермерства, але не ўключае чаканыя ўваходныя і выходныя трансакцыі."
+msgid "This is the total amount of coneys in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgstr "Агульная сума манет Coneys у блокчэйне ў бягучым крайнім падблоку, падкантрольным вашаму закрытаму ключу. Уключае ў сябе замарожаныя ўзнагароды за фермерства, але не ўключае чаканыя ўваходныя і выходныя трансакцыі."
 
 #: src/components/wallet/card/WalletCardPendingTotalBalance.tsx:29
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -2192,8 +2188,8 @@ msgid "This trade was included on blockchain at this block height"
 msgstr "Гэтая здзелка была занесена ў блокчэйн на ўказанай вышыні блока"
 
 #: src/components/app/AppTimeBombAlert.tsx:19
-msgid "This version of Chia is no longer compatible with the blockchain and can not safely farm."
-msgstr "Гэтая версія Chia больш несумяшчальная з блокчэйнам і не можа бяспечна фермерстваваць."
+msgid "This version of Coneys is no longer compatible with the blockchain and can not safely farm."
+msgstr "Гэтая версія Coneys больш несумяшчальная з блокчэйнам і не можа бяспечна фермерстваваць."
 
 #: src/components/fullNode/FullNode.jsx:92
 msgid "Time Created"
@@ -2217,8 +2213,8 @@ msgstr "Каму"
 msgid "Total Balance"
 msgstr "Агульны баланс"
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:15
-#~ msgid "Total Chia Farmed"
+#: src/components/farm/card/FarmCardTotalConeysFarmed.tsx:15
+#~ msgid "Total Coneys Farmed"
 #~ msgstr ""
 
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:20
@@ -2381,7 +2377,7 @@ msgid "Waiting for the transaction to be confirmed"
 msgstr ""
 
 #: src/components/pool/PoolOverview.tsx:185
-#: src/components/wallet/standard/WalletStandard.tsx:656
+#: src/components/wallet/standard/WalletStandard.tsx:674
 msgid "Wallet Status:"
 msgstr ""
 
@@ -2390,7 +2386,7 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:30
-#~ msgid "WalletItem.chiaWallet"
+#~ msgid "WalletItem.coneysWallet"
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:48
@@ -2414,7 +2410,7 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/dashboard/DashboardSideBar.tsx:45
-#: src/components/wallet/Wallets.tsx:112
+#: src/components/wallet/Wallets.tsx:173
 msgid "Wallets"
 msgstr "Кашалькі"
 
@@ -2427,8 +2423,8 @@ msgid "Want to Join a Pool? Create a Plot NFT"
 msgstr ""
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
-msgid "Want to earn more Chia? Add more plots to your farm."
-msgstr "Хочацца атрымліваць большы даход у Chia? Дадайце больш дзялянак на сваю ферму."
+msgid "Want to earn more Coneys? Add more plots to your farm."
+msgstr "Хочацца атрымліваць большы даход у Coneys? Дадайце больш дзялянак на сваю ферму."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:86
 msgid "Want to have a delay before the next plot starts?"
@@ -2455,8 +2451,8 @@ msgid "Weight is the total added difficulty of all sub blocks up to and includin
 msgstr "Вага — гэта агульная дабаўленая складанасць усіх падблокаў, у тым ліку гэтага"
 
 #: src/components/selectKey/SelectKey.tsx:141
-msgid "Welcome to Chia. Please log in with an existing key, or create a new key."
-msgstr "Вітаем у Chia. Увайдзіце ў сістэму з дапамогай існуючага ключа або стварыце новы."
+msgid "Welcome to Coneys. Please log in with an existing key, or create a new key."
+msgstr "Вітаем у Coneys. Увайдзіце ў сістэму з дапамогай існуючага ключа або стварыце новы."
 
 #: src/components/wallet/WalletAdd.tsx:66
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
@@ -2526,8 +2522,8 @@ msgid "You need to claim your rewards first"
 msgstr ""
 
 #: src/components/app/AppTimeBomb.tsx:28
-#~ msgid "You need to upgrade the Chia application as this version will stop working soon!"
-#~ msgstr "You need to upgrade the Chia application as this version will stop working soon!"
+#~ msgid "You need to upgrade the Coneys application as this version will stop working soon!"
+#~ msgstr "You need to upgrade the Coneys application as this version will stop working soon!"
 
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:37
 msgid "You need {currencyCode} to join a pool."
@@ -2566,16 +2562,16 @@ msgid "[Error 22] File not found. Most likely one of the plot folders in your co
 msgstr "[Памылка 22] Файл не знойдзены. Хутчэй за ўсё, праблема з адной з папак з дзялянкамі, указаных у файле config.yaml."
 
 #: src/components/wallet/WalletStatusCard.tsx:41
-#: src/components/wallet/Wallets.tsx:77
+#: src/components/wallet/Wallets.tsx:143
 msgid "connections:"
 msgstr "падлучэнні:"
 
 #: src/components/wallet/WalletStatusCard.tsx:33
-#: src/components/wallet/Wallets.tsx:69
+#: src/components/wallet/Wallets.tsx:135
 msgid "height:"
 msgstr "вышыня:"
 
-#: src/components/wallet/Wallets.tsx:63
+#: src/components/wallet/Wallets.tsx:129
 msgid "not synced"
 msgstr "не сінхр."
 
@@ -2584,17 +2580,17 @@ msgid "p2_singleton_puzzle_hash is not defined"
 msgstr ""
 
 #: src/components/wallet/WalletStatusCard.tsx:27
-#: src/components/wallet/Wallets.tsx:57
+#: src/components/wallet/Wallets.tsx:123
 msgid "status:"
 msgstr "стан:"
 
 #: src/components/wallet/WalletStatusCard.tsx:29
-#: src/components/wallet/Wallets.tsx:62
+#: src/components/wallet/Wallets.tsx:128
 msgid "synced"
 msgstr "сінхр."
 
 #: src/components/wallet/WalletStatusCard.tsx:29
-#: src/components/wallet/Wallets.tsx:61
+#: src/components/wallet/Wallets.tsx:127
 msgid "syncing"
 msgstr "ідзе сінхр."
 
@@ -2614,9 +2610,9 @@ msgstr ""
 msgid "{currencyCode} Block Rewards"
 msgstr "{currencyCode} Узнагарода за блок"
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:29
-msgid "{currencyCode} Total Chia Farmed"
-msgstr "{currencyCode} Усяго Chia урадзілася"
+#: src/components/farm/card/FarmCardTotalConeysFarmed.tsx:29
+msgid "{currencyCode} Total Coneys Farmed"
+msgstr "{currencyCode} Усяго Coneys урадзілася"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28
 msgid "{currencyCode} User Transaction Fees"
@@ -2625,3 +2621,4 @@ msgstr "{currencyCode} Камісійныя за трансакцыі карыс
 #: src/components/core/components/Amount/Amount.tsx:80
 msgid "{mojo, plural, one {mojo} other {mojos}}"
 msgstr ""
+

@@ -1,6 +1,6 @@
 import React, { ReactNode, ReactElement } from 'react';
 import styled from 'styled-components';
-import { Flex, TooltipIcon } from '@chia/core';
+import { Flex, TooltipIcon } from '@coneys/core';
 import {
   Box,
   Card,

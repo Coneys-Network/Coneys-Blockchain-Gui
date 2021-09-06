@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useHistory } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import { t, Trans } from '@lingui/macro';
-import { AlertDialog } from '@chia/core';
+import { AlertDialog } from '@coneys/core';
 import { ChevronRight as ChevronRightIcon } from '@material-ui/icons';
 import { useForm, SubmitHandler } from 'react-hook-form';
-import { ButtonLoading, Flex, Form, FormBackButton, Loading } from '@chia/core';
+import { ButtonLoading, Flex, Form, FormBackButton, Loading } from '@coneys/core';
 import { PlotHeaderSource } from '../PlotHeader';
 import PlotAddChooseSize from './PlotAddChooseSize';
 import PlotAddNumberOfPlots from './PlotAddNumberOfPlots';
@@ -165,7 +165,6 @@ export default function PlotAdd() {
         <PlotAddNumberOfPlots />
         <PlotAddSelectTemporaryDirectory />
         <PlotAddSelectFinalDirectory />
-        <PlotAddNFT ref={addNFTref} />
         <Flex gap={1}>
           <FormBackButton variant="outlined" />
           <ButtonLoading

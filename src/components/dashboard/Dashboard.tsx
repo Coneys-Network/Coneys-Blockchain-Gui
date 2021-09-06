@@ -8,7 +8,7 @@ import {
   Flex,
   Logo,
   ToolbarSpacing,
-} from '@chia/core';
+} from '@coneys/core';
 import { defaultLocale, locales } from '../../config/locales';
 import Wallets from '../wallet/Wallets';
 import FullNode from '../fullNode/FullNode';
